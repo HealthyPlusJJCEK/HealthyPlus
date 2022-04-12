@@ -20,7 +20,6 @@ public class Medico implements Serializable {
     private Long id_usuario;
 
 
-
     @ManyToMany
     @JoinTable(name = "medico_sucursal",
             joinColumns=@JoinColumn(name = "id_medico"),

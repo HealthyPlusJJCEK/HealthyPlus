@@ -16,7 +16,7 @@ public class Cita implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Date fecha;
+    private String estado;
 
     @ManyToMany
     @JoinTable(name = "cita_medico",
@@ -29,4 +29,11 @@ public class Cita implements Serializable {
            joinColumns=@JoinColumn(name = "id_cita"),
            inverseJoinColumns = @JoinColumn(name = "id_paciente"))
    private Set<Paciente> paciente;
+
+
+    @ManyToMany
+    @JoinTable(name = "cita_horarios",
+            joinColumns=@JoinColumn(name = "id_cita"),
+            inverseJoinColumns = @JoinColumn(name = "id_horario"))
+   private Set<Horarios> horarios;
 }

@@ -2,10 +2,14 @@ package com.ista.healthyplus.models;
 
 
 import lombok.Data;
+import org.apache.tomcat.jni.Time;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.TimeZone;
+import java.util.Timer;
 
 
 @Data
@@ -16,7 +20,9 @@ public class Horarios implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Date hora_inico;
+    private Date dia;
 
-    private Date hora_final;
+    private String hora_inico;
+
+    private String hora_final;
 }
