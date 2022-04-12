@@ -36,7 +36,6 @@ public class Consulta implements Serializable{
             joinColumns=@JoinColumn(name = "id_consulta"),
             inverseJoinColumns = @JoinColumn(name = "id_paciente") )
     private Set<Paciente> pacienteSet;
-
     @ManyToMany
     @JoinTable(name = "consulta_medico",
             joinColumns=@JoinColumn(name = "id_consulta"),
