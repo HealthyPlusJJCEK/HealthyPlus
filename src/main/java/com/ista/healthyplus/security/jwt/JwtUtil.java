@@ -36,9 +36,9 @@ public class JwtUtil {
         return extractExpiration(token).before(new Date());
     }
 
-    public String generateToken(String email) {
+    public String generateToken(String cedula) {
         Map<String, Object> claims = new HashMap<>();
-        return createToken(claims, email);
+        return createToken(claims, cedula);
     }
 
     private String createToken(Map<String, Object> claims, String subject) {
