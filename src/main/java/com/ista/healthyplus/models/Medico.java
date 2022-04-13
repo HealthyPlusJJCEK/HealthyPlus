@@ -17,6 +17,9 @@ public class Medico implements Serializable {
 
     private String foto;
 
+    @Transient
+    private String urlfoto;
+
     private Long id_usuario;
 
 

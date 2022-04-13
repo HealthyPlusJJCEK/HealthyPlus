@@ -4,6 +4,7 @@ package com.ista.healthyplus.controller;
 import com.ista.healthyplus.models.Especialidad;
 import com.ista.healthyplus.models.Medico;
 import com.ista.healthyplus.service.MedicoService;
+import com.ista.healthyplus.service.S3Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
