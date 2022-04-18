@@ -9,7 +9,6 @@ spring boot(https://spring.io/).
 4. Amazon AWS
 Todas estas dependencias se encuentrarn en pom.xml
 
-
 #Despligue
 El backend se encuntra desplegado en
 HEROKU.
