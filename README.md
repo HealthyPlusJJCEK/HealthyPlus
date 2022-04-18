@@ -12,7 +12,6 @@ Todas estas dependencias se encuentrarn en pom.xml
 #Despligue
 El backend se encuntra desplegado en
 HEROKU.
-
 Ha concección a dos bases de datos en linea
 que son.
 1. PosgresSQL en Heroku
